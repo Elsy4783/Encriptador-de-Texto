@@ -1,10 +1,16 @@
 * {
-  background: #f3f5fc;
+  background: var(--color-fondo);
   font-family: "Inter";
   font-weight: 400;
   line-height: 100%;
 }
-
+:root {
+  --color-fondo: rgb(242, 244, 247);
+  --color-titulos: #0a3871;
+}
+header {
+  display: flex;
+}
 .logo {
   width: 10%;
   padding-top: 10px;
@@ -16,14 +22,34 @@ main {
   margin-bottom: 50px;
   margin-left: 80px;
 }
+h1 {
+  color: var(--color-titulos);
+  font-size: 45px;
+  width: 700px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--color-titulos);
+  font-size: 25px;
+  width: 350px;
+  margin-top: 85px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--color-titulos);
+  width: 700px;
+  text-align: center;
+}
 
 .textArea {
-  font-size: 32px;
+  font-size: 30px;
   border: none;
   border-radius: 15px;
   color: #0a3871;
   width: 700px;
-  margin-top: 90px;
+  margin-top: 35px;
   margin-right: 220px;
   background: white;
   text-transform: lowercase;
@@ -44,7 +70,7 @@ main {
   border-radius: 24px;
   color: #0a3871;
   margin-left: 91;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 30;
   position: static;
 }
@@ -61,7 +87,7 @@ main {
 
 .btn-encriptar {
   font-size: 25px;
-  background: #0a3871;
+  background: var(--color-titulos);
   border: 1px solid #0a3871;
   border-radius: 24px;
   color: white;
@@ -71,10 +97,10 @@ main {
 }
 .btn-desencriptar {
   font-size: 25px;
-  background: #f3f5fc;
-  border: 1px solid #0a3871;
+  background: var(--color-fondo);
+  border: 1px solid var(--color-titulos);
   border-radius: 24px;
-  color: #0a3871;
+  color: var(--color-titulos);
   cursor: pointer;
   height: 60px;
   width: 220px;
@@ -83,7 +109,7 @@ main {
 
 .btn-borrar {
   font-size: 25px;
-  background: #0a3871;
+  background: var(--color-titulos);
   border: 1px solid #0a3871;
   border-radius: 24px;
   color: #f2f3f5;
@@ -96,5 +122,5 @@ main {
 }
 .informacion {
   font-size: 15px;
-  color: #0a3871;
+  color: var(--color-titulos);
 }
