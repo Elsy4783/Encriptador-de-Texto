@@ -20,9 +20,12 @@ main {
 .textArea {
   font-size: 32px;
   border: none;
+  border-radius: 15px;
   color: #0a3871;
+  width: 700px;
   margin-top: 90px;
-
+  margin-right: 220px;
+  background: white;
   text-transform: lowercase;
 }
 .textArea:focus {
@@ -43,7 +46,7 @@ main {
   margin-left: 91;
   margin-top: 10px;
   padding-left: 30;
-  position: fixed;
+  position: static;
 }
 
 .mensaje:focus {
@@ -87,8 +90,8 @@ main {
   cursor: pointer;
   height: 67px;
   width: 320px;
-  margin-top: 350px;
-  margin-left: 30px;
+  margin-top: 40px;
+  margin-left: 22px;
   position: absolute;
 }
 .informacion {

@@ -8,8 +8,7 @@ function btnEncriptar() {
 }
 
 function borrar() {
-  textArea.value = "";
-  mensaje.value = "";
+  location.reload();
 }
 
 function encriptar(stringEncriptada) {
